@@ -43,11 +43,9 @@ function getColor(pos, neg) {
     const hue = Math.min((pos / neg) ** 3 * 60, 120);
     return `hsl(${hue}, 75%, 50%)`;
 }
-
-
 function style(feature) {
     const posMigration = 0; 
-    const negMigration = 1; 
+    const negMigration = 1; V
     return {
         color: getColor(posMigration, negMigration),
         weight: 2
